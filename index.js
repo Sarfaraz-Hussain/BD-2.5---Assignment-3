@@ -211,6 +211,10 @@ let hotels = [
   },
 ];
 
+app.get('/', (req, res) => {
+  res.json(hotels);
+});
+
 // ====================================================
 
 function sortByPricingLowToHigh(h1, h2) {
